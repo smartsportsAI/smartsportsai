@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Sports AI (SSA)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <div class="brand">Smart Sports AI (SSA)</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#ai">AI Coach</a>
+      <a href="#tournaments">Tournaments</a>
+    </nav>
+    <button class="cta">Get Started</button>
+  </header>
+
+  <main>
+    <section class="hero" id="dashboard">
+      <div>
+        <h1>Train smarter. Compete harder.</h1>
+        <p>Build advanced athlete profiles, get discovered by coaches, and unlock AI-powered insights for sports and esports.</p>
+        <div class="hero-actions">
+          <button class="cta">Create Profile</button>
+          <button class="ghost">Explore Tournaments</button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>AI Insights</h3>
+        <p>Skill Score, strengths, weaknesses, and personalized training tips.</p>
+        <div class="stat-grid">
+          <div><span>Score</span><strong>86</strong></div>
+          <div><span>Matches</span><strong>34</strong></div>
+          <div><span>Rank</span><strong>#12</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" id="features">
+      <div class="card">
+        <h3>Player Profiles</h3>
+        <p>Rich profiles with stats, media, and achievements.</p>
+      </div>
+      <div class="card">
+        <h3>Coach Discovery</h3>
+        <p>Search, bookmark, and send offers securely.</p>
+      </div>
+      <div class="card">
+        <h3>Live Scores</h3>
+        <p>Track matches with real-time updates and stats.</p>
+      </div>
+    </section>
+
+    <section class="grid" id="tournaments">
+      <div class="card">
+        <h3>Sports Tournaments</h3>
+        <p>Brackets, leaderboards, and rankings built-in.</p>
+      </div>
+      <div class="card">
+        <h3>Coach Hiring</h3>
+        <p>Secure offer requests, accept/reject flow, and protected chat.</p>
+      </div>
+      <div class="card">
+        <h3>AI Video Analysis</h3>
+        <p>Upload clips and receive posture + technique feedback.</p>
+      </div>
+    </section>
+  </main>
+
+  <button class="ai-fab" id="aiFab">AI Coach</button>
+
+  <div class="ai-chat" id="aiChat">
+    <div class="ai-header">AI Coach <button id="aiClose">×</button></div>
+    <div class="ai-messages" id="aiMessages"></div>
+    <div class="ai-input">
+      <input id="aiInput" placeholder="Ask about training, strategy, rules..." />
+      <button id="aiSend">Send</button>
+    </div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
+
